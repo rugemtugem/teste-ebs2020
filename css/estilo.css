@@ -1,0 +1,423 @@
+/* CSS Document */
+/* * @author Fábio RUGEMTUGEM */
+/* ========================= layout ======================== */
+ html, body, {
+     height: 100%;
+}
+ body {
+     font-family: Helvetica, Arial, sans-serif;
+     overflow-x: hidden;
+     background-color: #efefef;
+}
+ header {
+     border-bottom: 1px solid #545454;
+}
+ p {
+     font-size: 10px;
+}
+ h1 {
+     font-family: Helvetica, Arial, sans-serif;
+     font-size: 40px;
+     font-weight: 600;
+}
+/* -- Barra de navegação -- */
+.navbar-light{
+	background-color:#fff;
+}
+.logo {
+     background-color: #fff;
+}
+ .navbar-brand {
+     height: 80px;
+     display: inline;
+}
+ .logo img {
+     margin: 15px 0;
+	 max-height:100px;
+}
+/* -- Navegador do usuário -- */
+ .dropdown {
+     width: 230px;
+     margin: 10px 20px;
+}
+ .dropdown p {
+     color: #acacac;
+     margin: 5px 0 0 0;
+     font-size: 0.8rem;
+     padding: 0 8px;
+}
+ .dropdown img {
+     margin: 0 8px;
+     border-radius: 50%;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border: 2px solid #7d7c78;
+     max-width: 50px;
+     float: left;
+}
+ .nav>li>a>img {
+     max-width: 50px;
+}
+/* -- Buscar cursos -- */
+ .navbar-collapse {
+     right: 0;
+     position: absolute;
+}
+ @media (max-width: 600px) {
+     .navbar-collapse {
+         position: relative;
+    }
+     .navbar {
+         margin: 20px;
+    }
+     .navbar-toggler {
+         right: 20px;
+         top: 25px;
+         position: absolute;
+    }
+}
+ .input-wrapper {
+     float: left;
+     position: relative;
+     width: 200px;
+     margin: 20px 0;
+}
+ @media (max-width: 600px) {
+     .input-wrapper {
+         position: relative;
+         margin: 25px;
+    }
+}
+ .input-wrapper:before {
+     content: "\f002";
+     font-family: FontAwesome;
+     font-style: normal;
+     font-weight: normal;
+     text-decoration: inherit;
+     color: #919191;
+     font-size: 18px;
+     padding-top: 4px;
+     padding-right: 0.5em;
+     position: absolute;
+     top: 0;
+     right: 0;
+}
+ input {
+     font-size: 14px;
+     width: 100%;
+     padding: 5px 30px 5px 10px;
+     border-radius: 50px;
+     -moz-border-radius: 50px;
+     -webkit-border-radius: 50px;
+     border: 2px solid #7d7c78;
+     background-color: #efefef;
+}
+/* -- Slide Bootstrap -- */
+ .carousel, .carousel-inner, .carousel-inner .item {
+     height: 400px;
+}
+ @media (max-width: 600px) {
+     .carousel, .carousel-inner, .carousel-inner .item {
+         height: auto;
+    }
+}
+/* legenda do slide */
+ .carousel-caption{
+     top: 10% !important;
+     bottom: auto;
+     text-align: left;
+     background-color: rgba(0,0,0,0.3);
+}
+ .btn-cursos {
+     border: 1px solid #fff;
+     border-radius: 50px;
+     -moz-border-radius: 50px;
+     -webkit-border-radius: 50px;
+     background-color: rgba(0,0,0,0.0);
+}
+/* Bullets do slide */
+ .carousel-indicators li {
+     width: 12px;
+     height: 12px;
+     border-radius: 100%;
+     -moz-border-radius: 100%;
+     -webkit-border-radius: 100%;
+     background-color: #cbc9ca;
+     cursor: pointer;
+}
+ .carousel-indicators .active {
+     background-color: #4c4040;
+}
+ .carousel-indicators {
+     position: absolute;
+     padding-top: 7px;
+     border-radius: 50px !important;
+     -moz-border-radius: 50px;
+     -webkit-border-radius: 50px;
+     width: 80px;
+     height: 25px;
+     margin: auto;
+     right: 0;
+     bottom: -12px;
+     left: 0;
+     z-index: 15;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     padding-left: 0;
+     list-style: none;
+     background-color: #fff;
+     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+/* controle do slide */
+ .carousel-control-prev-icon, .carousel-control-next-icon {
+     width: 27px;
+     height: 46px;
+}
+ .carousel-control-prev-icon {
+     background-image: url(../imagens/prev.png) !important;
+}
+ .carousel-control-next-icon {
+     background-image: url(../imagens/next.png) !important;
+}
+/* -- Título meus cursos -- */
+ header {
+     margin-top: 50px;
+     border-bottom: 1px solid #d3d3d3;
+}
+ header h1 {
+     font-size: 25px;
+}
+ .text-center {
+     margin: 20px 0;
+}
+/* -- Chamada meus cursos -- */
+ .chamada-curso {
+     padding: 0 20px 20px 20px;
+     background-color: #fff;
+}
+ .adicionar-curso {
+     padding: 10% 25%;
+     border: 2px dashed #9f9f9f;
+}
+ .adicionar-curso img {
+     display: block;
+     margin-left: auto;
+     margin-right: auto 
+}
+ .adicionar-curso h1 {
+     font-size: 30px;
+     color: #9f9f9f;
+}
+ @media (max-width: 600px) {
+     .adicionar-curso h1 {
+         font-size: 2rem;
+    }
+}
+.chamada-curso h1 {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 20px;
+}
+ .chamada-curso p {
+     font-size: 14px;
+     margin-bottom: 20px;
+}
+  .btn-curso {
+     color: #fff;
+     border: 1px solid #fff;
+     border-radius: 50px;
+     -moz-border-radius: 50px;
+     -webkit-border-radius: 50px;
+     background-color: #EF4030;
+     width: 60%;
+     margin: 0 auto;
+}
+ .btn-curso.focus, .btn-curso:focus {
+     color: #333;
+     background-color: #e6e6e6;
+     border-color: #EF4030 
+}
+ .btn-curso:hover {
+     color: #EF4030;
+     background-color: #fff;
+     border: 1px solid #EF4030 
+}
+/* -- Chamada novo curso -- */
+ .novo-curso {
+     position: absolute;
+     top: 0;
+     right: 15px;
+}
+/* -- rodape -- */
+ .rodape {
+     background-color: #fff;
+}
+ .logo-rodape {
+     margin: 2% 0;
+}
+ .logo-rodape p {
+     color: #a19fa0;
+     text-align: left;
+     padding: 20px 0 0 0;
+     margin: 0;
+}
+ .contato-rodape {
+     margin: 2% 0;
+}
+ .contato-rodape p {
+     color: #a6ada6;
+     text-align: left;
+     font-size: 14px;
+     padding: 20px 0 0 0;
+     margin: 0;
+}
+ .contato-rodape h1 {
+     color: #555555;
+     text-align: left;
+     font-size: 18px;
+     font-weight: 600;
+     margin: 0;
+}
+ .social-rodape {
+     margin: 2% 0;
+     text-align: left;
+}
+ .social-rodape h1 {
+     padding: 0 0 20px 0;
+     color: #555555;
+     text-align: left;
+     font-size: 18px;
+     font-weight: 600;
+     margin: 0;
+}
+ .fa {
+     margin-left: 5px;
+     padding: 5px;
+     font-size: 30px;
+     width: 40px;
+     text-align: center;
+     text-decoration: none;
+     border-radius: 50%;
+}
+ .fa:hover {
+     opacity: 0.7;
+}
+ .fa-twitter, .fa-youtube, .fa-pinterest {
+     background: #b5b5b5;
+     color: white;
+}
+ .direitos {
+     margin: 20px auto;
+     text-align: left;
+}
+ .direitos p {
+     color: #a19fa0;
+     text-align: left;
+}
+/* Conteúdo do modal */
+ .modal{
+     top:15%;
+}
+ .modal-dialog{
+     max-width: 700px;
+}
+ .modal-content {
+     position: relative;
+     background-color: #fff;
+     margin: auto;
+     padding: 0;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+     -webkit-animation-name: animatetop;
+     -webkit-animation-duration: 0.4s;
+     animation-name: animatetop;
+     animation-duration: 0.4s 
+}
+/* Animação do modal */
+ @-webkit-keyframes animatetop {
+     from {
+         top:-300px;
+         opacity:0 
+    }
+     to {
+         top: 0;
+         opacity: 1 
+    }
+}
+ @keyframes animatetop {
+     from {
+         top:-300px;
+         opacity:0 
+    }
+     to {
+         top: 0;
+         opacity: 1 
+    }
+}
+/* Botão de fechar */
+ #fechar {
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     border-radius: 100px;
+     -moz-border-radius: 100px;
+     -weblit-border-radius: 100px;
+     padding: 0 7px 0px 7px;
+     width: 30px;
+     height: 30px;
+     background-color: #fff;
+     position: absolute;
+     top: -15px;
+     right: -10px;
+     color: #ff9376;
+     font-size: 28px;
+     border: 0;
+     line-height:1;
+}
+ #fechar:hover, #fechar:focus {
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
+}
+ .modal-header{
+     padding: 20px;
+}
+ .modal-header img{
+     border-radius: 10px 0 0 0;
+     -moz-border-radius: 10px 0 0 0;
+     -weblit-border-radius: 10px 0 0 0;
+}
+ .modal-body {
+     padding: 5% 5%;
+     text-align: left;
+}
+ .modal-body h1 {
+     font-size: 30px;
+}
+ .modal-body p {
+     color: #bfbfbf;
+     font-size: 14px;
+}
+/* -- Botoes -- */
+ .btn-custom {
+     color: white;
+     width: 250px;
+     margin: auto;
+     border-radius: 500px;
+     -webkit-border-radius: 500px;
+     -moz-border-radius: 500px;
+     padding: 5px 55px;
+     background-color: #1da2da;
+     text-transform: uppercase;
+     transition: background 0.4s, color 0.4s;
+}
+ .modal-footer {
+     padding: 2px 16px;
+     color: white;
+}
